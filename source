@@ -8523,7 +8523,7 @@ addcmd('joindate',{'jd'},function(args, speaker)
 		local splitDates = string.split(date,"-")
 		table.insert(dates,Players[v].Name.." joined: "..splitDates[2].."/"..splitDates[3].."/"..splitDates[1])
 	end
-	notify('Join Date (Month/Day/Year)',table.concat(dates, ',\n'))
+	notify('تاريخ الانضمام   (Month/Day/Year)',table.concat(dates, ',\n'))
 end)
 
 addcmd('chatjoindate',{'cjd'},function(args, speaker)
@@ -8637,7 +8637,7 @@ addcmd('un2022materials',{'unuse2022materials'},function(args, speaker)
 	end
 end)
 
-addcmd('goto',{'to'},function(args, speaker)
+addcmd('تنقل',{'to'},function(args, speaker)
 	local players = getPlayer(args[1], speaker)
 	for i,v in pairs(players)do
 		if Players[v].Character ~= nil then
